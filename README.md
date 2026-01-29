@@ -1,2 +1,4 @@
 # AICT-
-PYTHON PROGRAM FOR AICT ASSIGNMENT
+AICT Programing Assignment
+Leanguage : Python
+Function : Student Record Search System
