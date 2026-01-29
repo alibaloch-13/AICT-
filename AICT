@@ -1,0 +1,59 @@
+student_search.py
+# Student Search Program
+# University: USP
+# Program: Artificial Intelligence (AI)
+# Semester: 1
+# Section: P
+# Student Search Program
+# University: USP
+# Program: Artificial Intelligence (AI)
+# Semester: 1
+# Section: P
+
+students = [
+    {"first": "Abdullah", "last": "Jutt"},
+    {"first": "Ali", "last": "Baloch"},
+    {"first": "Mohsin", "last": "Ali"},
+    {"first": "Aitaza", "last": "Ul Hassan"},
+    {"first": "Malik", "last": "Abdul Salam"},
+    {"first": "Shykh", "last": "Hassan"},
+    {"first": "Zohair", "last": "Buzdar"},
+    {"first": "Waqas", "last": "Bhai"},
+    {"first": "Anzak", "last": ""},
+    {"first": "Burhan", "last": "Khan"},
+    {"first": "Rehan", "last": ""},
+    {"first": "Hasnain", "last": ""},
+    {"first": "Hassan", "last": "Goria"},
+    {"first": "Hussain", "last": "Baloch"},
+    {"first": "Zain", "last": "Shah"},
+    {"first": "Aown", "last": "Haider"},
+    {"first": "Rana", "last": "Abdullah"},
+    {"first": "Manan", "last": "Khan"},
+]
+
+print("=== USP University | AI | Semester 1 | Section P ===")
+print("Name search karain (Exit k liye 'exit' likhein)\n")
+
+while True:
+    search = input("First ya Last Name likhein: ").strip().lower()
+
+    if search == "exit":
+        print("\nProgram band ho gaya 👋")
+        break
+
+    found = False
+
+    for s in students:
+        if search == s["first"].lower() or search == s["last"].lower():
+            print("\n--- Student Detail ---")
+            print("Name:", s["first"], s["last"])
+            print("University: USP")
+            print("Program: Artificial Intelligence (AI)")
+            print("Semester: 1")
+            print("Section: P")
+            found = True
+
+    if not found:
+        print("\n❌ Koi student nahi mila")
+
+    print("\n----------------------------\n")
